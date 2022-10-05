@@ -1,0 +1,97 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-side{
+    padding-top: 1.5rem;
+    padding: 2rem;
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+
+}
+.right-side{
+    flex:1
+}
+.best-ad{
+    margin-top:4rem;
+    background-color:#363739; 
+    border-radius: 4rem;
+    width:fit-content;
+    padding:20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+.best-ad>div{
+    position: absolute;
+  background-color: var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left:8px;
+    border-radius: 4rem;
+    z-index:1
+}
+
+.best-ad>span{
+    z-index: 2;
+}
+
+.h-text{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 4.5rem;
+    gap:1.5rem;
+    text-transform: uppercase;
+    text-overflow: inherit;
+    color: white;
+}
+.h-text>div:nth-of-type(3){
+    font-weight:200;
+    text-transform: none;
+    font-size: 1rem;
+    width: 80%
+
+
+}
+.figures{
+    display: flex;
+    gap:2rem;
+
+}
+.figures>div{
+    display: flex;
+    flex-direction: column;
+}
+.figures>div>span:nth-of-type(1){
+    color:white;
+    font-size: 2rem;
+}
+.figures>div>span:nth-of-type(2){
+    color:var(--gray);
+    text-transform: uppercase ;
+}
+.h-buttons{
+    display: flex;
+    gap:1rem;
+    font-weight: normal;
+}
+.h-buttons>:nth-child(1){
+color: white;
+background-color: var(--orange);
+width: 8rem;
+}
+.h-buttons>:nth-child(2){
+color: white;
+border: 2px solid var(--orange);
+background-color: transparent;
+width: 8rem;
+}
