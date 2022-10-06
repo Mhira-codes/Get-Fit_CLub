@@ -1,0 +1,17 @@
+.programs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    
+}
+.program-header{
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
