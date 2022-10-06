@@ -1,7 +1,7 @@
 import React from "react";
 import "./Program.css";
 import { programsData } from "../../../data/programsData";
-import Arrow from "../../assets"
+import Arrow from "../../../assets/rightArrow.png"
 const Program = () => {
   return (
     <div className="programs" id="program">
@@ -15,12 +15,15 @@ const Program = () => {
       {/* progrma-data */}
       <div className="program-data">
         {programsData.map((data) => (
-          <div className="program-data">
+          <div className="program-list">
             {data.image}
             <span>{data.heading}
-            <img src={Arrow} alt="" />
             </span>
             <span>{data.details}</span>
+          <div className="join-now">
+            <span>Join Now</span>
+            <img src={Arrow} alt="" />
+          </div>
           </div>
         ))}
       </div>
