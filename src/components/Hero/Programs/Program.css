@@ -15,3 +15,46 @@
     font-weight: bold;
     font-style: italic;
 }
+.program-data{
+    display: flex;
+    gap:1rem
+}
+
+.program-list{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding:1rem;
+    justify-content:space-between;
+    color:white;
+    gap:2rem;
+}
+.program-list:hover{
+background-image:var(--planCard);
+cursor: pointer;
+}
+
+.program-list>:nth-child(1)
+{
+    width: 2rem;
+    height: 2rem;
+    fill :white
+}
+.program-list>:nth-child(2)
+{
+ font-size: 1rem;
+ font-weight: bold;
+}
+.program-list>:nth-child(1)
+{
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+.join-now{
+    display: flex;
+    gap:2rem;
+   align-items: center;
+}
+.join-now>img{
+   width: 1rem;
+}
