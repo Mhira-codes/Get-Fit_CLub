@@ -1,0 +1,61 @@
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+    padding: 0 2rem;
+    gap: 4rem;
+    position: relative;
+}
+.plans-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.plans-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    background-color: var(--caloryCard);
+    width: 15rem;
+    padding:1.5rem;
+}
+.plans-categories:nth-child(2){
+    background-image: var(--planCard);
+    transform: scale(1.1);
+}
+.plans-categories:nth-child(2)>svg{
+    fill: white;
+}.plans-categories:nth-child(2)>button{
+    color: orange;
+}
+.plans-categories>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.plans-categories>:nth-child(2){
+    font-weight: bold;
+    font-size: 1rem;
+}
+.plans-categories>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.plans-categories>:nth-child(5){
+font-size: 0.8rem;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.feature-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature-section>img{
+    width: 1rem;
+}
