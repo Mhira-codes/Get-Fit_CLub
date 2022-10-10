@@ -3,11 +3,9 @@
     justify-content: space-between;
 }
 .logo{
-    /* width:10rem;
-    height:3rem; */
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
+     width:10rem;
+    height:3rem;  
+   
 }
 .h-menu{
     display:flex;
