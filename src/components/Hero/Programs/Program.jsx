@@ -14,8 +14,8 @@ const Program = () => {
 
       {/* progrma-data */}
       <div className="program-data">
-        {programsData.map((data) => (
-          <div className="program-list">
+        {programsData.map((data,i) => (
+          <div className="program-list" key={i}>
             {data.image}
             <span>{data.heading}
             </span>
