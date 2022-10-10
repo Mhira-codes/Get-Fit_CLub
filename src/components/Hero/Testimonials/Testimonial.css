@@ -1,0 +1,33 @@
+.testimonials{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+
+}
+.left-testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1 1;
+    text-transform: uppercase;
+    color: white;
+}
+.left-testimonial>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+.left-testimonial>:nth-child(2),
+.left-testimonial>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.left-testimonial>:nth-child(4){
+    text-transform: none;
+    letter-spacing: 2px;
+    line-height: 40px;
+    text-align: justify;
+}
+.right-testimonial{
+    flex: 1;
+    position: relative;
+}
