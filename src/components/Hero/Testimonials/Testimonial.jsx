@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Testimonial.css";
 import { testimonialsData } from "../../../data/testimonialsData";
-
+import leftArrow from "../../../assets/leftArrow.png"
+import rightArrow from "../../../assets/rightArrow.png"
 const Testimonial = () => {
   const [getData, setgetData] = useState(0);
   const getlength = testimonialsData.length;
@@ -18,7 +19,23 @@ const Testimonial = () => {
         </span>
       </div>
       <div className="right-testimonial">
+        <div></div>
+        <div></div>
         <img src={testimonialsData[getData].image} alt="" />
+
+        <div className="arrows">
+       <img src={leftArrow} alt="" 
+       onClick={()=>(
+        getData===0?setgetData(getlength-1):setgetData((prev)=>prev-1)
+       )}
+
+       />
+       <img src={rightArrow} alt="" 
+       onClick={()=>(
+        getData===getlength-1?setgetData(0):setgetData((prev)=>prev+1)
+       )}
+       />
+        </div>
       </div>
     </div>
   );
