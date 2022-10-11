@@ -31,3 +31,40 @@
     flex: 1;
     position: relative;
 }
+.right-testimonial>img{
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    position: absolute;
+    top: 2rem;
+    right: 8rem;
+}
+.right-testimonial>:nth-child(1){
+width: 17rem;
+height: 20rem;
+border: 2px solid orange;
+background-color: transparent;
+position: absolute;
+right: 9rem;
+top: 0.9rem;
+}
+.right-testimonial>:nth-child(2){
+width: 17rem;
+height: 19rem;
+background-image: var(--planCard);
+position: absolute;
+top:4rem;
+right: 7rem;
+}
+.arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+ left: 3rem;
+
+}
+.arrows>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
