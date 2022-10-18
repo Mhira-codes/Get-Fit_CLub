@@ -5,9 +5,10 @@ import heroImage from "../../assets/hero_image.png";
 import heroImageBack from "../../assets/hero_image_back.png";
 import Calories from "../../assets/calories.png";
 import "./Hero.css";
-
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const transition = { type: "spring",duration: "3" };
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
@@ -15,7 +16,11 @@ const Hero = () => {
         <Header />
         {/* ad */}
         <div className="best-ad">
-          <div></div>
+          <motion.div
+         initial={{left:"238px"}}
+         whileInView={{left:"8px"}}
+         transition={transition}
+          ></motion.div>
           <span>The best fitness club in the town</span>
         </div>
         {/*hero-text  */}
@@ -59,23 +64,34 @@ const Hero = () => {
 
       <div className="right-side">
         <button className="btn">Join Now</button>
-        <div className="heart-rate">
+        <motion.div 
+        initial={{right:"-1rem"}}
+        whileInView={{right:"4rem"}}
+        transition={{...transition, type:"tween"}}
+        className="heart-rate">
           <img src={heartlogo} alt="heartlogo" />
           <span>Heart rate</span>
           <span>108 bpm</span>
-        </div>
+        </motion.div>
 
         <img src={heroImage} alt="image" className="hero-image" />
-        <img src={heroImageBack} alt="image" className="hero-image-back" />
+        <motion.img
+        initial={{right:"11rem"}}
+        transition={transition}
+        whileInView={{right:"20rem"}} src={heroImageBack} alt="image" className="hero-image-back" />
 
-        <div className="calories">
+        <motion.div 
+        initial={{right:"37rem"}}
+        transition={transition}
+        whileInView={{right:"28rem"}}
+        className="calories">
           <img src={Calories} alt="calories" />
 
           <div className="calories-text">
             <span>Calories Burned</span>
             <span>340 kcal</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

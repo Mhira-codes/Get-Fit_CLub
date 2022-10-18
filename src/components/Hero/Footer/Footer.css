@@ -25,3 +25,20 @@ height: 20rem;
 .footer-logo>img{
     width: 10rem;
 }
+.footer-blur1{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+    right:15%;
+    filter: blur(200px);
+    background-color: red;
+}
+.footer-blur2{
+    width: 26rem;
+    height: 12rem;
+    bottom: 0;
+  left: 15%;
+    filter: blur(200px);
+    background-color:rgb(255, 115, 0);
+  
+}
